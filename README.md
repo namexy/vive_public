@@ -1,7 +1,7 @@
 一.关于ubuntu开机自启动的说明:
 -
 ubuntu18.04不再使用 inited 管理系统，改用 systemd
-但是个人认为开机启动的rc.local更加好用，所以可以自己配置rc.local
+但是个人认为开机启动的rc.local更加好用，所以可以自己配置rc.local<br>
 1.实现原理<br>
 systemd 默认会读取 /etc/systemd/system 下的配置文件，该目录下的文件会链接 /lib/systemd/system/ 下的文件。一般系统安装完 /lib/systemd/system/ 下会有 rc-local.service 文件，即我们需要的配置文件.<br>
 2.将 /lib/systemd/system/rc-local.service 链接到 /etc/systemd/system/ 目录下面,分别执行如下命令
