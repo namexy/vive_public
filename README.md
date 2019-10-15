@@ -35,8 +35,8 @@ systemd 默认会读取 /etc/systemd/system 下的配置文件，该目录下的
     # bits.  
     #  
     # By default this script does nothing.  
-
+    
     exit 0  
 
-
+在命令里要配置java环境
     
